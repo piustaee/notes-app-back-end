@@ -1,0 +1,76 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "commonjs": true,
+      "es2021": true,
+       "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:sonarjs/recommended",
+      "airbnb-base",
+      "@salesforce/eslint-config-lwc/recommended",
+      "prettier"
+    ],
+    "overrides": [
+          ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+        },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-trailing-spaces": "error",
+      "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+      "prefer-destructuring": ["error", { "object": true, "array": false }],
+      "no-param-reassign": ["error", { "props": false }],
+      "no-underscore-dangle": 0,
+      "linebreak-style": 0,
+      "indent": ["error", 4],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "only-multiline",
+          "objects": "only-multiline",
+          "imports": "never",
+          "exports": "never",
+          "functions": "never"
+        }
+      ],
+      "import/extensions": ["error", "always", { "ignorePackages": true }],
+      "object-curly-newline": "off",
+      "prefer-const": [
+        "error",
+        {
+          "destructuring": "any",
+          "ignoreReadBeforeAssign": false
+        }
+      ],
+      "semi": ["warn", "never"],
+      "class-methods-use-this": "off",
+      "prefer-template": 0
+    }
+  }
+  
+
+
+//   {
+//     "env": {
+//         "commonjs": true,
+//         "es2021": true,
+//         "node": true
+//     },
+//     "extends": "airbnb-base",
+//     "overrides": [
+//     ],
+//     "parserOptions": {
+//         "ecmaVersion": "latest"
+//     },
+//     "rules": {
+//         "no-console": "off"
+//     }
+// }
